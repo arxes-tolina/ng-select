@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.21.0"></a>
+# [2.21.0](https://github.com/ng-select/ng-select/compare/v2.20.0...v2.21.0) (2019-06-11)
+
+
+### Features
+
+* tab selects current item, closes ng-select and focus next input element [#475](https://github.com/ng-select/ng-select/issues/475) ([b834132](https://github.com/ng-select/ng-select/commit/b834132))
+
+
+
 <a name="2.20.0"></a>
 # [2.20.0](https://github.com/ng-select/ng-select/compare/v2.19.0...v2.20.0) (2019-05-18)
 
