@@ -22,6 +22,7 @@ import { Observable } from 'rxjs';
                    bindLabel="name"
                    autofocus
                    bindValue="id"
+                   selectOnTab=true
                    [(ngModel)]="selectedPersonId">
         </ng-select>
         ---
@@ -43,6 +44,8 @@ import { Observable } from 'rxjs';
         <ng-select [items]="people"
                    bindLabel="name"
                    bindValue="id"
+                   selectOnTab=true
+                   addTag=true
                    [(ngModel)]="selectedPersonId2">
         </ng-select>
         ---

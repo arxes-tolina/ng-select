@@ -279,7 +279,7 @@ export class NgSelectComponent implements OnDestroy, OnChanges, AfterViewInit, C
                     this._handleEnter($event);
                     break;
                 case KeyCode.Tab:
-                    this._handleTab($event);
+                    this._handleTab();
                     break;
                 case KeyCode.Esc:
                     this.close();
@@ -743,8 +743,8 @@ export class NgSelectComponent implements OnDestroy, OnChanges, AfterViewInit, C
         this.dropdownPanel.scrollIntoTag();
     }
 
-    private _handleTab($event: KeyboardEvent) {
-        if (this.isOpen === false && !isDefined(this.addTag)) {
+    private _handleTab() {
+        if (this.isOpen === false) {
             return;
         }
         if (this.selectOnTab) {
@@ -752,7 +752,6 @@ export class NgSelectComponent implements OnDestroy, OnChanges, AfterViewInit, C
                 this.toggleItem(this.itemsList.markedItem);
             } else if (this.showAddTag) {
                 this.selectTag();
-                $event.preventDefault();
             } else {
                 this.close();
             }
