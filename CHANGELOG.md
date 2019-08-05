@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.22.3"></a>
+## [2.22.3](https://github.com/ng-select/ng-select/compare/v2.22.2...v2.22.3) (2019-08-05)
+
+
+### Bug Fixes
+
+* enter and tab work properly ([e89b5ba](https://github.com/ng-select/ng-select/commit/e89b5ba))
+
+
+
 <a name="2.22.2"></a>
 ## [2.22.2](https://github.com/ng-select/ng-select/compare/v2.21.2...v2.22.2) (2019-06-11)
 
