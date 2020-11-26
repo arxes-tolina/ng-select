@@ -1,81 +1,76 @@
-# Changelog
+# Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## Since 3.2.0, notable changes are on [Releases Page](https://github.com/ng-select/ng-select/releases)
-
-### [3.1.1](https://github.com/ng-select/ng-select/compare/v3.1.0...v3.1.1) (2019-10-19)
-
-### Features
-
-* **keyDownFn:** user defined keydown handler to prevent ng-select behaviour([8b2b817](https://github.com/ng-select/ng-select/commit/8b2b817)), closes [#1155](https://github.com/ng-select/ng-select/issues/1155)
-
-
-### Bug Fixes
-
-* don't allow empty space as tag ([#1383](https://github.com/ng-select/ng-select/issues/1383)) ([6f69745](https://github.com/ng-select/ng-select/commit/6f69745))
-
-
-
-## [3.1.0](https://github.com/ng-select/ng-select/compare/v3.0.7...v3.1.0) (2019-10-14)
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/ng-select/ng-select/compare/v2.22.3...v4.0.0) (2020-11-26)
 
 
 ### Bug Fixes
 
 * add licence for ng-option-highlight ([cef723f](https://github.com/ng-select/ng-select/commit/cef723f))
+* adjust dropdown position on selection change - include top ([69490ae](https://github.com/ng-select/ng-select/commit/69490ae)), closes [#1234](https://github.com/ng-select/ng-select/issues/1234)
+* appearance outline cut off ([#1656](https://github.com/ng-select/ng-select/issues/1656)) ([0fed861](https://github.com/ng-select/ng-select/commit/0fed861))
+* don't allow empty space as tag ([#1383](https://github.com/ng-select/ng-select/issues/1383)) ([6f69745](https://github.com/ng-select/ng-select/commit/6f69745))
+* don't calculate panel dimensions for empty array ([9d8ccf3](https://github.com/ng-select/ng-select/commit/9d8ccf3)), closes [#1237](https://github.com/ng-select/ng-select/issues/1237)
+* dynamic footer and header template ([#1268](https://github.com/ng-select/ng-select/issues/1268)) ([8787fa9](https://github.com/ng-select/ng-select/commit/8787fa9)), closes [#1282](https://github.com/ng-select/ng-select/issues/1282)
+* emit add event after model has been updated ([86d611d](https://github.com/ng-select/ng-select/commit/86d611d)), closes [#620](https://github.com/ng-select/ng-select/issues/620)
+* emit empty string for default term length ([#1478](https://github.com/ng-select/ng-select/issues/1478)) ([2741cce](https://github.com/ng-select/ng-select/commit/2741cce)), closes [#1420](https://github.com/ng-select/ng-select/issues/1420)
+* emit typeahead value when search is cleared after item is added ([#1289](https://github.com/ng-select/ng-select/issues/1289)) ([550a75a](https://github.com/ng-select/ng-select/commit/550a75a)), closes [#1107](https://github.com/ng-select/ng-select/issues/1107)
+* filtering after composition end with searchWhileComposing ([f99d06f](https://github.com/ng-select/ng-select/commit/f99d06f)), closes [#1449](https://github.com/ng-select/ng-select/issues/1449)
+* handle IME compositon mode ([5bf42a6](https://github.com/ng-select/ng-select/commit/5bf42a6)), closes [#704](https://github.com/ng-select/ng-select/issues/704)
+* ignore tab when dropdown is closed and addTag is false ([7f31ea6](https://github.com/ng-select/ng-select/commit/7f31ea6)), closes [#1212](https://github.com/ng-select/ng-select/issues/1212)
 * make all templates dynamic ([6801f7f](https://github.com/ng-select/ng-select/commit/6801f7f)), closes [#1255](https://github.com/ng-select/ng-select/issues/1255)
+* mark first item when last marked is filtered out ([e08a769](https://github.com/ng-select/ng-select/commit/e08a769)), closes [#1247](https://github.com/ng-select/ng-select/issues/1247)
+* material theme RTL transform-origin ng-select/ng-select[#1476](https://github.com/ng-select/ng-select/issues/1476) ([#1546](https://github.com/ng-select/ng-select/issues/1546)) ([8d615b4](https://github.com/ng-select/ng-select/commit/8d615b4))
+* ngClass overwrites 'ng-select' class ([#1543](https://github.com/ng-select/ng-select/issues/1543)) ([1dae790](https://github.com/ng-select/ng-select/commit/1dae790)), closes [#1535](https://github.com/ng-select/ng-select/issues/1535)
+* preserve items without group order ([86ab751](https://github.com/ng-select/ng-select/commit/86ab751)), closes [#1132](https://github.com/ng-select/ng-select/issues/1132)
+* run close event inside zone ([b5f63b6](https://github.com/ng-select/ng-select/commit/b5f63b6)), closes [#1309](https://github.com/ng-select/ng-select/issues/1309)
+* scroll to marked item only when it is outside of panel height ([eb1a803](https://github.com/ng-select/ng-select/commit/eb1a803)), closes [#1273](https://github.com/ng-select/ng-select/issues/1273)
+* **ng-option:** handle label updates ([634c804](https://github.com/ng-select/ng-select/commit/634c804)), closes [#649](https://github.com/ng-select/ng-select/issues/649)
+* small improvements ([#1670](https://github.com/ng-select/ng-select/issues/1670)) ([3a13adf](https://github.com/ng-select/ng-select/commit/3a13adf)), closes [#1539](https://github.com/ng-select/ng-select/issues/1539) [#1639](https://github.com/ng-select/ng-select/issues/1639) [#1640](https://github.com/ng-select/ng-select/issues/1640)
+* **appearance:** apply styles correctly ([e78818e](https://github.com/ng-select/ng-select/commit/e78818e)), closes [#1422](https://github.com/ng-select/ng-select/issues/1422)
+* use regex with multiple return to highlight multiple search terms ([#1275](https://github.com/ng-select/ng-select/issues/1275)) ([8a0d880](https://github.com/ng-select/ng-select/commit/8a0d880)), closes [#739](https://github.com/ng-select/ng-select/issues/739)
+* **ng-option:** don't escape html inside ng-options ([7ccea9d](https://github.com/ng-select/ng-select/commit/7ccea9d)), closes [#506](https://github.com/ng-select/ng-select/issues/506)
+* **searchWhileComposing:** control whether items should be filtered while composing ([23f54c1](https://github.com/ng-select/ng-select/commit/23f54c1)), closes [#1296](https://github.com/ng-select/ng-select/issues/1296)
+* **style:** fixed color in base styles ([#1491](https://github.com/ng-select/ng-select/issues/1491)) ([9fc73cc](https://github.com/ng-select/ng-select/commit/9fc73cc)), closes [#1454](https://github.com/ng-select/ng-select/issues/1454)
+* stringify group label ([d8be200](https://github.com/ng-select/ng-select/commit/d8be200)), closes [#1052](https://github.com/ng-select/ng-select/issues/1052)
+* tests ([#1648](https://github.com/ng-select/ng-select/issues/1648)) ([ffb7b64](https://github.com/ng-select/ng-select/commit/ffb7b64))
+* track by htmlId by default ([e158bb4](https://github.com/ng-select/ng-select/commit/e158bb4)), closes [#1244](https://github.com/ng-select/ng-select/issues/1244) [#1181](https://github.com/ng-select/ng-select/issues/1181) [#1218](https://github.com/ng-select/ng-select/issues/1218) [#1229](https://github.com/ng-select/ng-select/issues/1229)
+* update peer dependencies to start from v8 ([a90e3f1](https://github.com/ng-select/ng-select/commit/a90e3f1))
+* use border thin for material theme ([1083ff6](https://github.com/ng-select/ng-select/commit/1083ff6)), closes [#969](https://github.com/ng-select/ng-select/issues/969)
+* use item as default track by ([1d7df92](https://github.com/ng-select/ng-select/commit/1d7df92)), closes [#1269](https://github.com/ng-select/ng-select/issues/1269)
+
+
+### Chores
+
+* move [ngOptionHighlight] to a separate package ([c09dde8](https://github.com/ng-select/ng-select/commit/c09dde8)), closes [#1116](https://github.com/ng-select/ng-select/issues/1116)
+* remove [excludeGroupsFromDefaultSelection] ([4fef383](https://github.com/ng-select/ng-select/commit/4fef383))
 
 
 ### Features
 
+* add appearance property for material theme ([#1413](https://github.com/ng-select/ng-select/issues/1413)) ([af4c6bb](https://github.com/ng-select/ng-select/commit/af4c6bb)), closes [#1334](https://github.com/ng-select/ng-select/issues/1334)
+* add input for tabIndex ([112f6a2](https://github.com/ng-select/ng-select/commit/112f6a2)), closes [#1175](https://github.com/ng-select/ng-select/issues/1175)
 * add readonly attribute ([8c507aa](https://github.com/ng-select/ng-select/commit/8c507aa)), closes [#786](https://github.com/ng-select/ng-select/issues/786)
+* Append appendTo NgSelectConfig ([#1385](https://github.com/ng-select/ng-select/issues/1385)) ([ce215ae](https://github.com/ng-select/ng-select/commit/ce215ae))
+* bindValue as global config ([#1392](https://github.com/ng-select/ng-select/issues/1392)) ([27bb1f5](https://github.com/ng-select/ng-select/commit/27bb1f5)), closes [#516](https://github.com/ng-select/ng-select/issues/516)
+* expose blur method ([643cf52](https://github.com/ng-select/ng-select/commit/643cf52)), closes [#1238](https://github.com/ng-select/ng-select/issues/1238) [#1242](https://github.com/ng-select/ng-select/issues/1242)
+* expose DropdownPosition type ([#1400](https://github.com/ng-select/ng-select/issues/1400)) ([048ef73](https://github.com/ng-select/ng-select/commit/048ef73))
+* group selection no longer affects disabled items ([#1434](https://github.com/ng-select/ng-select/issues/1434)) ([#1437](https://github.com/ng-select/ng-select/issues/1437)) ([4416422](https://github.com/ng-select/ng-select/commit/4416422))
+* pass custom input attributes using `inputAttrs` ([1614aa7](https://github.com/ng-select/ng-select/commit/1614aa7)), closes [#1222](https://github.com/ng-select/ng-select/issues/1222)
+* update ng-select to support angular v8 ([2e4d329](https://github.com/ng-select/ng-select/commit/2e4d329)), closes [#1196](https://github.com/ng-select/ng-select/issues/1196)
+* **minTermLength:** add minimum term length to start a search ([b06fc5f](https://github.com/ng-select/ng-select/commit/b06fc5f)), closes [#685](https://github.com/ng-select/ng-select/issues/685)
+* **update:** Update to angular 9 ([e974504](https://github.com/ng-select/ng-select/commit/e974504))
 
 
+### BREAKING CHANGES
 
-### [3.0.7](https://github.com/ng-select/ng-select/compare/v3.0.6...v3.0.7) (2019-08-25)
-
-
-### Bug Fixes
-
-* run close event inside zone ([b5f63b6](https://github.com/ng-select/ng-select/commit/b5f63b6)), closes [#1309](https://github.com/ng-select/ng-select/issues/1309)
-* scroll to marked item only when it is outside of panel height ([eb1a803](https://github.com/ng-select/ng-select/commit/eb1a803)), closes [#1273](https://github.com/ng-select/ng-select/issues/1273)
-
-
-
-### [3.0.6](https://github.com/ng-select/ng-select/compare/v3.0.5...v3.0.6) (2019-08-05)
-
-
-### Bug Fixes
-
-* emit typeahead value when search is cleared after item is added ([#1289](https://github.com/ng-select/ng-select/issues/1289)) ([550a75a](https://github.com/ng-select/ng-select/commit/550a75a)), closes [#1107](https://github.com/ng-select/ng-select/issues/1107)
-
-
-
-### [3.0.5](https://github.com/ng-select/ng-select/compare/v3.0.4...v3.0.5) (2019-07-30)
-
-
-### Bug Fixes
-
-* handle IME compositon mode ([5bf42a6](https://github.com/ng-select/ng-select/commit/5bf42a6)), closes [#704](https://github.com/ng-select/ng-select/issues/704)
-
-
-
-### [3.0.4](https://github.com/ng-select/ng-select/compare/v3.0.3...v3.0.4) (2019-07-26)
-
-
-### Bug Fixes
-
-* dynamic footer and header template ([#1268](https://github.com/ng-select/ng-select/issues/1268)) ([8787fa9](https://github.com/ng-select/ng-select/commit/8787fa9)), closes [#1282](https://github.com/ng-select/ng-select/issues/1282)
-* use regex with multiple return to highlight multiple search terms ([#1275](https://github.com/ng-select/ng-select/issues/1275)) ([8a0d880](https://github.com/ng-select/ng-select/commit/8a0d880)), closes [#739](https://github.com/ng-select/ng-select/issues/739)
-
-
-
-### [3.0.3](https://github.com/ng-select/ng-select/compare/v3.0.2...v3.0.3) (2019-07-15)
-
-
-### Bug Fixes
-
-* use item as default track by ([1d7df92](https://github.com/ng-select/ng-select/commit/1d7df92)), closes [#1269](https://github.com/ng-select/ng-select/issues/1269)
+* **update:** Probably no breaking changes, but bumping to 4.0.0.
+* autoCorrect, autoCapitalize are now removed.
+* `[ngOptionHighlight]` is now available from @ng-select/ng-option-highlight
+* `[excludeGroupsFromDefaultSelection]` is now removed until better solution is found
+* `filterValue` is now available as `searchTerm`
 
 
 
