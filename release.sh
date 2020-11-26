@@ -15,4 +15,4 @@ git push --follow-tags origin master
 cp README.md ./dist
 cp .npmrc ./dist
 cd ./dist
-yarn publish
+
